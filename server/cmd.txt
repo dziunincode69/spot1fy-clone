@@ -1,0 +1,11 @@
+
+sequelize init
+sequelize db:create
+
+npx sequelize model:create --name User --attributes email:string,password:string,ispremium:boolean,verificationCode:integer
+npx sequelize model:create --name Transaction --attributes userId:integer,urlTransaction:string
+npx sequelize model:create --name Playlist --attributes name:string,imageUrl:string,userId:integer
+npx sequelize model:create --name PlaylistSong --attributes name:string,imageUrl:string,userId:integer
+
+
+
